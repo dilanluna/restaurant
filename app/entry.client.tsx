@@ -1,4 +1,10 @@
-import { RemixBrowser } from "@remix-run/react";
-import { hydrate } from "react-dom";
+import { hydrateRoot } from 'react-dom/client';
+import { RemixBrowser } from '@remix-run/react';
+import { ClientCacheProvider } from './chakra-ui/context';
 
-hydrate(<RemixBrowser />, document);
+hydrateRoot(
+  document,
+  <ClientCacheProvider>
+    <RemixBrowser />
+  </ClientCacheProvider>,
+);
