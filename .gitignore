@@ -1,0 +1,13 @@
+# dependencies
+node_modules
+
+# build
+.cache
+build
+public/build
+
+# editors
+.vscode
+
+# environments
+.env
