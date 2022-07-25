@@ -1,7 +1,8 @@
+import Document from '~/document';
+import theme from '~/chakra-ui/theme';
 import { Outlet } from '@remix-run/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import type { LinksFunction, MetaFunction } from '@remix-run/node';
-import Document from './document';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -23,7 +24,7 @@ export let links: LinksFunction = () => {
 export default function App() {
   return (
     <Document>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <Outlet />
       </ChakraProvider>
     </Document>
