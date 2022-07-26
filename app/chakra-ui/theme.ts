@@ -34,6 +34,11 @@ const theme = extendTheme({
         _hover: {
           textDecoration: 'none',
         },
+      }
+    },
+    Heading: {
+      baseStyle: {
+        fontWeight: 'normal',
       },
     },
     Button: {
