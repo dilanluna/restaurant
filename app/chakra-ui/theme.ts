@@ -18,7 +18,7 @@ const theme = extendTheme({
   },
   fonts: {
     body: `Inter, ${baseTheme.fonts.body}`,
-    heading: `Inter, ${baseTheme.fonts.heading}`,
+    heading: `Italianno, ${baseTheme.fonts.heading}`,
   },
   styles: {
     global: {
