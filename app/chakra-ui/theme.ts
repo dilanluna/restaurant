@@ -29,6 +29,13 @@ const theme = extendTheme({
     },
   },
   components: {
+    Link: {
+      baseStyle: {
+        _hover: {
+          textDecoration: 'none',
+        },
+      },
+    },
     Button: {
       variants: {
         primary: {
