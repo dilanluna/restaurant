@@ -1,11 +1,13 @@
 import { Box } from '@chakra-ui/react';
 import type { BoxProps } from '@chakra-ui/react';
 
+export type CardProps = BoxProps & { opaque?: boolean };
+
 export default function Card({
   children,
   opaque = false,
   ...props
-}: BoxProps & { opaque?: boolean }) {
+}: CardProps) {
   return (
     <Box
       {...props}
