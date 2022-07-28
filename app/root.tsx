@@ -6,7 +6,7 @@ import type { LinksFunction, MetaFunction } from '@remix-run/node';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'Restaurant',
+  title: '48 Cousine',
   viewport: 'width=device-width,initial-scale=1',
 });
 

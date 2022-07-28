@@ -3,8 +3,13 @@ import Footer from '~/components/footer';
 import HeroCard from '~/components/hero-card';
 import Container from '~/components/container';
 import HeroSection from '~/components/hero-section';
+import type { MetaFunction } from '@remix-run/node';
 import banner from '~/assets/banner_reservation.jpg';
 import { Box, Heading, HStack, Text } from '@chakra-ui/react';
+
+export const meta: MetaFunction = () => ({
+  title: 'Reservation - 48 Cuisine',
+});
 
 export default function Reservation() {
   return (
