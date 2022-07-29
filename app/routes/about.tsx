@@ -19,9 +19,9 @@ export default function About() {
       <HeroSection banner={banner}>
         <Container>
           <HStack
-            pt="44"
-            justifyContent="center">
-            <HeroCard px="44">
+            justifyContent="center"
+            pt={{ base: '40', md: '44' }}>
+            <HeroCard px={{ base: '16', sm: '20', md: '44' }}>
               <Heading
                 as="h2"
                 fontSize="9xl"

@@ -16,13 +16,13 @@ export default function Index() {
         banner={banner}>
         <Container>
           <HStack
-            pt="44"
-            justifyContent="center">
-            <HeroCard px="36">
+            justifyContent="center"
+            pt={{ base: '40', md: '44' }}>
+            <HeroCard px={{ base: '16', sm: '20', md: '36' }}>
               <Heading
                 as="h1"
-                fontSize="9xl"
-                lineHeight="0.625">
+                lineHeight="0.625"
+                fontSize={{ base: '8xl', md: '9xl' }}>
                 48 Cuisine
               </Heading>
               <Text

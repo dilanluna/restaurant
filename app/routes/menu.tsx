@@ -19,18 +19,18 @@ export default function Menu() {
       <HeroSection banner={banner}>
         <Container>
           <HStack
-            pt="44"
-            justifyContent="center">
-            <HeroCard px="24">
+            justifyContent="center"
+            pt={{ base: '40', md: '44' }}>
+            <HeroCard px={{ base: '6', md: '24' }}>
               <Heading
                 as="h2"
-                fontSize="9xl"
-                lineHeight="0.625">
+                lineHeight="0.625"
+                fontSize={{ base: '8xl', md: '9xl' }}>
                 Main Menu
               </Heading>
               <Text
-                px="4.875rem"
-                fontSize="lg">
+                fontSize="lg"
+                px={{ base: '6', md: '4.875rem' }}>
                 We have Chinese food, Japanese food, and Korean food
               </Text>
             </HeroCard>

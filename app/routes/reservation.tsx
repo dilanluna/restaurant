@@ -19,13 +19,13 @@ export default function Reservation() {
       <HeroSection banner={banner}>
         <Container>
           <HStack
-            pt="44"
-            justifyContent="center">
-            <HeroCard px="32">
+            justifyContent="center"
+            pt={{ base: '40', md: '44' }}>
+            <HeroCard px={{ base: '10', sm: '14', md: '32' }}>
               <Heading
                 as="h2"
-                fontSize="9xl"
-                lineHeight="0.625">
+                lineHeight="0.625"
+                fontSize={{ base: '8xl', md: '9xl' }}>
                 Reservation
               </Heading>
               <Text
