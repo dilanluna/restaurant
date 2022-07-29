@@ -7,7 +7,7 @@ export default function HeroCard({ children, ...props }: HeroCardProps) {
   return (
     <Card
       py="16"
-      px="32"
+      px={{ base: '16', sm: '20', md: '32' }}
       {...props}
       flex="1"
       maxW="700px"
