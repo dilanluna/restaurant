@@ -23,7 +23,11 @@ export default function HeroSection({
         bgSize: 'cover',
         bgRepeat: 'no-repeat',
         bgImage: `url(${banner})`,
-        bgPosition: `${cover ? 'bottom' : 'bottom -132px'} center`,
+        bgPosition: {
+          base: `${cover ? 'bottom' : 'top'} center`,
+          lg: `${cover ? 'bottom' : 'top -24px'} center`,
+          xl: `${cover ? 'bottom' : 'top -176px'} center`,
+        },
       })}>
       <Box
         w="100%"
