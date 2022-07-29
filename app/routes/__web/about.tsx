@@ -1,7 +1,6 @@
 import Card from '~/components/card';
 import { json } from '@remix-run/node';
 import Header from '~/components/header';
-import Footer from '~/components/footer';
 import HeroCard from '~/components/hero-card';
 import banner from '~/assets/banner_about.jpg';
 import Container from '~/components/container';
@@ -116,7 +115,7 @@ export default function About() {
   const team = useLoaderData<Teammate[]>();
 
   return (
-    <Box pb="10">
+    <>
       <Header />
 
       <HeroSection
@@ -233,8 +232,6 @@ export default function About() {
       </Container>
 
       <SectionSpacer />
-
-      <Footer />
-    </Box>
+    </>
   );
 }
