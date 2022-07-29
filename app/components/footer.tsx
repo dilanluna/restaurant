@@ -7,6 +7,7 @@ export default function Footer() {
   return (
     <Box
       py="10"
+      as="footer"
       borderTopWidth="1px"
       borderTopStyle="solid"
       borderTopColor="white">
@@ -28,6 +29,7 @@ export default function Footer() {
           </HStack>
 
           <Stack
+            as="nav"
             textAlign="center"
             justifyContent="space-between"
             flex={{ base: 'none', lg: '1' }}
