@@ -34,6 +34,7 @@ export default function Header({ opaque = false }: { opaque?: boolean }) {
       left="0"
       w="100%"
       py={`1.375rem`}
+      zIndex="docked"
       position="fixed"
       bg={opaque ? 'brand-black' : undefined}
       bgGradient={
