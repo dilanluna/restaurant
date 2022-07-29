@@ -41,7 +41,9 @@ export default function Header({ opaque = false }: { opaque?: boolean }) {
         !opaque ? 'linear(to-b, black -26.87%, blackAlpha.50 119%)' : undefined
       }>
       <Container>
-        <HStack justifyContent="space-between">
+        <HStack
+          as="nav"
+          justifyContent="space-between">
           {isLargeScreen && (
             <HStack spacing={{ base: 6, lg: 10, '2xl': 12 }}>
               <NavLink to="/">Welcome</NavLink>
